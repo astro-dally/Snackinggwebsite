@@ -1,0 +1,100 @@
+.cart-container {
+    padding: 20px;
+    background-color: #0f0f0f; /* Slightly darker background */
+    color: #fefefe; /* Off-white text color */
+    max-width: 800px; /* Constrain the width */
+    margin: 0 auto; /* Center the cart on the page */
+    border-radius: 12px; /* Smooth rounded corners */
+}
+
+.empty-cart-message {
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 30px;
+    color: #fefefe;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #252525; /* Darker background for items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.cart-item-img {
+    width: 70px; /* Smaller image size */
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: 2px solid #f8c300; /* Add border to image */
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-details h5 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fefefe;
+}
+
+.cart-item-details .item-price {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f8c300; /* Bright yellow for price */
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-control button {
+    background-color: #f8c300; /* Bright yellow buttons */
+    color: #121212;
+    border: none;
+    padding: 6px 12px; /* Smaller buttons */
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 8px;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-control button:hover {
+    background-color: #e6ac00; /* Slightly darker yellow on hover */
+}
+
+.quantity-control .quantity {
+    font-size: 1.3em;
+    color: #fefefe;
+}
+
+.total-price-container {
+    text-align: right;
+    margin-top: 30px;
+    border-top: 2px solid #444; /* Border to separate total price */
+    padding-top: 20px;
+}
+
+.total-price-container h3 {
+    font-size: 1.7em;
+    color: #fefefe;
+}
+
+.total-price-container .total-price {
+    font-weight: bold;
+    color: #f8c300; /* Bright yellow for total price */
+}

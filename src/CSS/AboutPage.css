@@ -1,0 +1,49 @@
+.About {
+  background-color: #000;
+  color: #f0f0f0;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.AboutName {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.AboutContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.AboutImg {
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.AboutText {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .AboutContent {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .AboutImg,
+  .AboutText {
+      max-width: 100%;
+  }
+}
