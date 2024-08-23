@@ -1,70 +1,92 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# <img src="https://github.com/user-attachments/assets/ba4aeb8d-73be-4670-8385-1217537a17a1" alt="LOGO!" width="150">
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Welcome to **Snacky Nerds** – the ultimate snacking platform tailored for tech enthusiasts and college students! Whether you're pulling an all-nighter, or just craving a midnight snack, Snacky Nerds has you covered with a unique snacking experience designed specifically for you.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Snacky Nerds is a one-stop platform for ordering your favorite snacks, especially during those late-night coding sessions or study marathons. Our platform is tailored to deliver snacks during specific time slots, ensuring that you get your snacks even when the campus is closed.
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **User-Friendly Interface**: A sleek, intuitive design that makes ordering snacks a breeze.
+- **Limited Stock Availability**: Get your hands on exclusive snacks with limited stock, making every bite special.
+- **Night-Time Delivery**: Order snacks during designated night slots when campus stores are closed.
+- **Wishlist Functionality**: Save your favorite snacks to your wishlist with a simple heart icon.
+- **Secure Sign-Up**: Register and log in with Google Sign-In, powered by Firebase, for a smooth and secure experience.
 
-### `npm run build`
+## 🖥️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Snacky Nerds is built with the following technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend**: 
+  - HTML
+  - CSS
+  - JavaScript
+  - React.js
+  - Bootstrap for responsive design
+- **Backend**:
+  - Node.js
+  - Firebase Authentication for Google Sign-In
+- **Deployment**: Vercel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌟 Key Pages
 
-### `npm run eject`
+- **Landing Page**: A visually appealing, animated landing page that captures the essence of Snacky Nerds.
+- **Snack Ordering Page**: Browse, select, and order your favorite snacks with just a few clicks.
+- **Wishlist**: Save snacks to your wishlist for quick access in the future.
+- **Sign-Up Page**: Register and log in securely using Google Sign-In.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔧 Installation & Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run this project locally, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/astro-dally/snackynerds.git
+   cd snackynerds
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Run the application**:
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Access the app**:
+   Open your browser and navigate to `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📈 Future Enhancements
 
-### Code Splitting
+- **Payment Integration**: Adding payment gateways for seamless transactions.
+- **Order Tracking**: Real-time order tracking to keep users informed about their deliveries.
+- **Improved Stock Management**: Dynamic stock updates and notifications for out-of-stock items.
+- **Personalized Snack Recommendations**: AI-driven recommendations based on user preferences and order history.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+We welcome contributions to make Snacky Nerds even better! Please check out our [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 💬 Connect with Us
 
-### Advanced Configuration
+Have questions, feedback, or just want to chat about snacks? Reach out to us at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Website**: [Snacky Nerds](https://snackynerds.vercel.app/)
+- **GitHub**: [astro-dally](https://github.com/astro-dally)
+- **Email**: [snackyynerds@gmail.com](snackyynerds@gmail.com)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Dive into Snacky Nerds and let's snack smartly! 🚀
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
