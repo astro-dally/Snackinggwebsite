@@ -128,7 +128,7 @@ export default function Payment() {
                 </div>
             )}
 
-            <div className="payment-proof-list">
+            {/* <div className="payment-proof-list">
                 <h3>Payment Proofs</h3>
                 <ul>
                     {paymentProofs.map(proof => (
@@ -146,7 +146,7 @@ export default function Payment() {
                         </li>
                     ))}
                 </ul>
-            </div>
+            </div> */}
             <ToastContainer />
         </div>
     );
