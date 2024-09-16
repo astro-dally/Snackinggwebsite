@@ -4,12 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import '../CSS/Cart.css';
 
 export default function Cart() {
-    const { cart, increaseQuantity, decreaseQuantity, getTotalPrice } = useContext(CartContext);
+    const { cart, increaseQuantity, decreaseQuantity, getTotalPrice, clearCart } = useContext(CartContext);
     const navigate = useNavigate();
 
     const handlePayment = () => {
         localStorage.setItem('cartItems', JSON.stringify(cart));  // Save cart items in localStorage
         navigate('/payment');
+        clearCart();
     };
 
     return (
