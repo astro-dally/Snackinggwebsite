@@ -6,7 +6,7 @@
 
 body, html {
     font-family: 'Poppins', sans-serif;
-    background-color: #121212;
+    background-color: hsl(0, 0%, 0%);
     color: #f4f4f4;
      /* Prevent horizontal scrolling */
 }
@@ -119,7 +119,7 @@ body, html {
 
 
 .footer-logo {
-    width: 200px;
+    width: 130px;
     margin-bottom: 0px;
   }
 

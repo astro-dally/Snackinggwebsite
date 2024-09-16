@@ -1,0 +1,108 @@
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000; /* Background set to black for contrast */
+    color: #fff;
+}
+
+.payment-container img {
+    background-color: #fff; /* White background for QR code */
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.payment-container h2 {
+    margin: 20px 0;
+    font-size: 28px;
+    color: #0f0; /* Green color for heading */
+}
+
+.payment-container p {
+    padding-top: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Updated button styling */
+.payment-container .proof-button {
+    padding: 12px 20px;
+    background-color: #0f0; /* Green button */
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    max-width: 200px; /* Limit button width */
+    width: 100%; /* Full width until max-width is reached */
+    margin: 15px 0;
+}
+
+.payment-container .proof-button:hover {
+    background-color: #0c0;
+    transform: scale(1.05); /* Slight enlarge effect on hover */
+}
+
+.payment-container .proof-button:active {
+    background-color: #0a0;
+    transform: scale(0.98); /* Press effect on click */
+}
+
+/* Proof form styling */
+.proof-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #222; /* Darker background for form */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.proof-form h3 {
+    font-size: 24px;
+    color: #0f0; /* Green heading for form */
+    margin-bottom: 15px;
+}
+
+.proof-form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff; /* White background for input fields */
+    color: #000;
+}
+
+.proof-form input::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+.proof-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f0; /* Green submit button */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.proof-form button:hover {
+    background-color: #0c0;
+}
+
+.proof-form button:active {
+    background-color: #0a0;
+}

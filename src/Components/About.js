@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className='About'>
             {/* About page Heading */}
-            <h1 className='AboutName'>About The Snackky Nerds</h1>
+            <h1 className='AboutName'>About Snackky Nerds</h1>
             {/* About page image and text */}
             <div className='AboutContent'>
                 {/* <img className="AboutImg" src={Image} alt="Snackky Nerds" /> */}

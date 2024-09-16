@@ -1,0 +1,85 @@
+/* Favourites.css */
+
+.favourites-container {
+    padding: 20px;
+    background-color: hsl(0, 0%, 0%); /* Black background */
+    color: #e0e0e0; /* Light grey text for readability */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favourites-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ff00; /* Green accent color */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #1f1f1f; /* Dark grey card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #00ff00; /* Green accent color for titles */
+}
+
+.card-cost {
+    font-size: 1rem;
+    color: #e0e0e0; /* Light grey text */
+    margin-bottom: 15px;
+}
+
+.btn-primaryy {
+    background-color: #00ff00; /* Green button */
+    border: none;
+    color: #121212; /* Black text on green button */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primaryy:hover {
+    background-color: #00cc00; /* Darker green on hover */
+}
+
+.btn-primaryy svg {
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .favourites-container h1 {
+        font-size: 2rem;
+    }
+}

@@ -4,9 +4,12 @@ export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
+    const [favourites, setFavourites] = useState(() => {
+        const savedFavourites = localStorage.getItem('favourites');
+        return savedFavourites ? JSON.parse(savedFavourites) : [];
+    });
 
     const addToCart = (item) => {
-        alert("Added to cart")
         setCart((prevCart) => {
             const itemIndex = prevCart.findIndex(cartItem => cartItem.title === item.title);
             if (itemIndex === -1) {
@@ -45,9 +48,21 @@ export const CartProvider = ({ children }) => {
             return total + price * item.quantity;
         }, 0);
     };
+    const clearCart = () => {
+        setCart([]);
+    };
+
+    const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
+
+    const updateFavourites = (newFavourites) => {
+        setFavourites(newFavourites);
+        localStorage.setItem('favourites', JSON.stringify(newFavourites));
+    };
+
+    const favouriteItemCount = favourites.length;
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, increaseQuantity, decreaseQuantity, getTotalPrice }}>
+        <CartContext.Provider value={{ cart, addToCart, increaseQuantity, decreaseQuantity, getTotalPrice, cartItemCount, favouriteItemCount, updateFavourites, clearCart }}>
             {children}
         </CartContext.Provider>
     );

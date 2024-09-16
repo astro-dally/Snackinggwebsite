@@ -1,5 +1,5 @@
 .About {
-  background-color: #000;
+  background-color: hsl(0, 0%, 0%);
   color: #f0f0f0;
   padding: 20px;
   font-family: 'Courier New', Courier, monospace;
@@ -10,6 +10,7 @@
   font-weight: bolder;
   text-align: center;
   margin-bottom: 20px;
+  color: aliceblue;
 }
 
 .AboutContent {

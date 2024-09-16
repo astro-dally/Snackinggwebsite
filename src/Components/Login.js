@@ -20,11 +20,17 @@ export default function Login({ closeLoginPopup }) {
         e.preventDefault();
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            alert('Login successful!');
+            if (email === "astroAdmin@gmail.com" && password === "astrospace64") {
+                // Redirect to admin route
+                alert('Admin login successful!');
+                navigate('/admin');
+            } else {
+                alert('Login successful!');
+                navigate('/snacks');
+            }
             login(); // Update authentication state
             closeLoginPopup();
             setBlur(false); // Remove blur after closing
-            navigate('/about'); // Redirect to the About page after successful login
         } catch (error) {
             alert(error.message);
         }
@@ -36,7 +42,7 @@ export default function Login({ closeLoginPopup }) {
             alert('Google Sign-In successful!');
             login(); // Update authentication state
             closeLoginPopup();
-            navigate('/about'); // Redirect to the About page after successful Google Sign-In
+            navigate('/snacks');
         } catch (error) {
             alert(error.message);
         }

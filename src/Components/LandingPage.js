@@ -19,7 +19,7 @@ const LandingPage = () => {
     };
 
     const handleLoginSuccess = () => {
-        navigate('/about'); // Redirect to About page after successful login
+        navigate('/snacks'); // Redirect to About page after successful login
     };
 
     return (

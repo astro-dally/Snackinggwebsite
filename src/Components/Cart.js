@@ -1,9 +1,16 @@
 import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
+import { useNavigate } from 'react-router-dom';
 import '../CSS/Cart.css';
 
 export default function Cart() {
     const { cart, increaseQuantity, decreaseQuantity, getTotalPrice } = useContext(CartContext);
+    const navigate = useNavigate();
+
+    const handlePayment = () => {
+        localStorage.setItem('cartItems', JSON.stringify(cart));  // Save cart items in localStorage
+        navigate('/payment');
+    };
 
     return (
         <div className="cart-container">
@@ -11,6 +18,7 @@ export default function Cart() {
                 <div className="empty-cart-message">Your cart is empty 🛒..</div>
             ) : (
                 <div>
+                    <h1 className="full-cart-message">Your cart items 🛒</h1>
                     <div className="cart-items">
                         {cart.map((item, index) => (
                             <div key={index} className="cart-item">
@@ -19,9 +27,9 @@ export default function Cart() {
                                     <h5>{item.title}</h5>
                                     <p className="item-price">{item.cost}</p>
                                     <div className="quantity-control">
-                                        <button className='decrease' onClick={() => decreaseQuantity(item)}>-</button>
+                                        <button className="decrease" onClick={() => decreaseQuantity(item)}>-</button>
                                         <span className="quantity">{item.quantity}</span>
-                                        <button className='increase' onClick={() => increaseQuantity(item)}>+</button>
+                                        <button className="increase" onClick={() => increaseQuantity(item)}>+</button>
                                     </div>
                                 </div>
                             </div>
@@ -30,6 +38,7 @@ export default function Cart() {
                     <div className="total-price-container">
                         <h3>Total Price: <span className="total-price">₹{getTotalPrice().toFixed(2)}</span></h3>
                     </div>
+                    <button className="pay-button" onClick={handlePayment}>PAY</button>
                 </div>
             )}
         </div>
