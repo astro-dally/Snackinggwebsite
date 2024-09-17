@@ -18,7 +18,7 @@ const AdminDashboard = () => {
 
     const fetchItems = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/snacks');
+            const response = await axios.get('http://localhost:5000/api/snacks');
             setItems(response.data);
         } catch (error) {
             console.error('Error fetching items:', error);
@@ -27,7 +27,7 @@ const AdminDashboard = () => {
 
     const fetchOrders = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/orders');
+            const response = await axios.get('http://localhost:5000/api/orders');
             setOrders(response.data);
         } catch (error) {
             console.error('Error fetching orders:', error);
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
 
     const fetchPaymentProofs = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/payment-proof');
+            const response = await axios.get('http://localhost:5000/api/payment-proof');
             setPaymentProofs(response.data);
         } catch (error) {
             console.error('Error fetching payment proofs:', error);
@@ -54,7 +54,7 @@ const AdminDashboard = () => {
         const newItem = { title, cost, imgSrc, altText, category };
 
         try {
-            await axios.post('http://localhost:5000/snacks', newItem);
+            await axios.post('http://localhost:5000/api/snacks', newItem);
             toast.success('Item added successfully!');
             setTitle('');
             setCost('');
@@ -151,7 +151,7 @@ const AdminDashboard = () => {
                         <strong>Name:</strong> {proof.name} <br />
                         <strong>Transaction ID:</strong> {proof.transactionId} <br />
                         <img
-                            src={`http://localhost:5000/uploads/${proof.paymentImage}`}
+                            src={`http://localhost:5000/uploads/api/${proof.paymentImage}`}
                             alt="Payment Image"
                             className="payment-image1"
                             width="150"
