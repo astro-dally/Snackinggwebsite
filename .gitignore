@@ -10,3 +10,4 @@ node_modules/
 # Ignore compiled files
 dist/
 build/
+.vercel
