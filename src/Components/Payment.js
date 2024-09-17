@@ -37,7 +37,7 @@ export default function Payment() {
 
     const fetchPaymentProofs = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/payment-proof');
+            const response = await axios.get('https://snackynerds-r5jsuqksj-dallys-projects.vercel.app/api/payment-proof');
             setPaymentProofs(response.data);
         } catch (error) {
             console.error('Error fetching payment proofs:', error);
