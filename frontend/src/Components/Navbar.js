@@ -6,9 +6,9 @@ import { IoFastFood } from "react-icons/io5";
 import { Link, useNavigate } from 'react-router-dom';
 import '../CSS/Navbar.css';
 import { signOut } from 'firebase/auth';
-import { auth } from '../Components/firebase';
+import { auth } from './firebase';
 import { CartContext } from './CartContext';
-import { useAuth } from '../Components/AuthContext';
+import { useAuth } from './AuthContext';
 
 export default function Navbar() {
     const navigate = useNavigate();

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import '../CSS/Login.css';
-import { auth } from '../Components/firebase';
+import { auth } from './firebase';
 import { googleSignIn } from './firebase';
 import SignUp from './SignUp';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../Components/AuthContext';
+import { useAuth } from './AuthContext';
 
 export default function Login({ closeLoginPopup }) {
     const [email, setEmail] = useState('');

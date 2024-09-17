@@ -55,7 +55,7 @@ let paymentProofs = [];
 let orders = [];
 
 // Fetch snacks based on category (if provided)
-app.get('/snacks', (req, res) => {
+app.get('api/snacks', (req, res) => {
     const { category } = req.query;
     if (category) {
         const filteredSnacks = snacks.filter(snack => snack.category === category);
@@ -66,14 +66,14 @@ app.get('/snacks', (req, res) => {
 });
 
 // Create a new snack
-app.post('/snacks', (req, res) => {
+app.post('api/snacks', (req, res) => {
     const newSnack = { id: snacks.length + 1, ...req.body };
     snacks.push(newSnack);
     res.status(201).json(newSnack);
 });
 
 // Place a new order (updated to ensure cart items are handled correctly)
-app.post('/orders', (req, res) => {
+app.post('api/orders', (req, res) => {
     const { name, cartItems, transactionId } = req.body;
 
     if (!name || !cartItems || !transactionId) {
@@ -103,7 +103,7 @@ app.post('/orders', (req, res) => {
 
 // Submit payment proof (updated to create order and clear cart)
 // Submit payment proof and create an order
-app.post('/payment-proof', upload.single('paymentImage'), (req, res) => {
+app.post('api/payment-proof', upload.single('paymentImage'), (req, res) => {
     const { name, transactionId } = req.body;
     if (!name || !transactionId || transactionId.length < 14) {
         return res.status(400).send('Name and valid transaction ID are required');
@@ -143,21 +143,21 @@ app.post('/payment-proof', upload.single('paymentImage'), (req, res) => {
 
 
 // Fetch payment proofs
-app.get('/payment-proof', (req, res) => {
+app.get('api/payment-proof', (req, res) => {
     res.json(paymentProofs);
 });
 
 // Fetch all orders
-app.get('/orders', (req, res) => {
+app.get('api/orders', (req, res) => {
     res.json(orders);
 });
 
 // Cart routes
-app.get('/cart', (req, res) => {
+app.get('api/cart', (req, res) => {
     res.json(cart);
 });
 
-app.post('/cart', (req, res) => {
+app.post('api/cart', (req, res) => {
     const { snackId, quantity = 1 } = req.body;
     const snack = snacks.find(s => s.id === snackId);
 
@@ -171,7 +171,7 @@ app.post('/cart', (req, res) => {
 });
 
 // Remove item from cart
-app.delete('/cart/:id', (req, res) => {
+app.delete('api/cart/:id', (req, res) => {
     const { id } = req.params;
     cart = cart.filter(item => item.id !== parseInt(id));
     res.status(200).json({ message: 'Item removed from cart' });

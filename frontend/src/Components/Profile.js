@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/Profile.css';
-import { useAuth } from '../Components/AuthContext'; // Assuming this context handles authentication state
+import { useAuth } from './AuthContext'; // Assuming this context handles authentication state
 import { getAuth } from 'firebase/auth';
 
 export default function Profile() {
