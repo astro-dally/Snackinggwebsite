@@ -9,11 +9,11 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 // CORS setup
-const corsOptions = {
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Replace with your React frontend URL
-    optionsSuccessStatus: 200
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//     origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Replace with your React frontend URL
+//     optionsSuccessStatus: 200
+// };
+app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files
 app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); // Serve files from 'uploads'
