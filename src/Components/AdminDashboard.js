@@ -18,7 +18,7 @@ const AdminDashboard = () => {
 
     const fetchItems = async () => {
         try {
-            const response = await axios.get('https://snackynerds-r5jsuqksj-dallys-projects.vercel.app/api/snacks');
+            const response = await axios.get('http://localhost:3000/api/snacks');
             setItems(response.data);
         } catch (error) {
             console.error('Error fetching items:', error);
