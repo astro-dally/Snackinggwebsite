@@ -16,7 +16,7 @@ export default function Cards() {
     });
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/api/snacks?category=${category}`)
+        axios.get(`https://snackynerds-5.onrender.com/api/snacks?category=${category}`)
             .then(response => {
                 setSnacks(response.data);
             })

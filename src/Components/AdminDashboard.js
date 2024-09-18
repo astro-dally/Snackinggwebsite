@@ -18,7 +18,7 @@ const AdminDashboard = () => {
 
     const fetchItems = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/snacks');
+            const response = await axios.get('https://snackynerds-5.onrender.com/api/snacks');
             setItems(response.data);
         } catch (error) {
             console.error('Error fetching items:', error);
@@ -27,7 +27,7 @@ const AdminDashboard = () => {
 
     const fetchOrders = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/orders');
+            const response = await axios.get('https://snackynerds-5.onrender.com/api/orders');
             setOrders(response.data);
         } catch (error) {
             console.error('Error fetching orders:', error);
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
 
     const fetchPaymentProofs = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/payment-proof');
+            const response = await axios.get('https://snackynerds-5.onrender.com/api/payment-proof');
             setPaymentProofs(response.data);
         } catch (error) {
             console.error('Error fetching payment proofs:', error);
@@ -54,7 +54,7 @@ const AdminDashboard = () => {
         const newItem = { title, cost, imgSrc, altText, category };
 
         try {
-            await axios.post('http://localhost:3000/api/snacks', newItem);
+            await axios.post('https://snackynerds-5.onrender.com/api/snacks', newItem);
             toast.success('Item added successfully!');
             setTitle('');
             setCost('');
@@ -151,7 +151,7 @@ const AdminDashboard = () => {
                         <strong>Name:</strong> {proof.name} <br />
                         <strong>Transaction ID:</strong> {proof.transactionId} <br />
                         <img
-                            src={`http://localhost:3000/uploads/api/${proof.paymentImage}`}
+                            src={`https://snackynerds-5.onrender.com/uploads/api/${proof.paymentImage}`}
                             alt="Payment Image"
                             className="payment-image1"
                             width="150"

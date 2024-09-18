@@ -37,7 +37,7 @@ export default function Payment() {
 
     const fetchPaymentProofs = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/payment-proof');
+            const response = await axios.get('https://snackynerds-5.onrender.com/api/payment-proof');
             setPaymentProofs(response.data);
         } catch (error) {
             console.error('Error fetching payment proofs:', error);
@@ -59,13 +59,13 @@ export default function Payment() {
         formData.append('cartItems', JSON.stringify(cartItems));
 
         try {
-            await axios.post('http://localhost:3000/api/payment-proof', formData, {
+            await axios.post('https://snackynerds-5.onrender.com/api/payment-proof', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
             });
 
-            await axios.post('http://localhost:3000/api/orders', {
+            await axios.post('https://snackynerds-5.onrender.com/api/orders', {
                 name: proofData.name,
                 cartItems: JSON.stringify(cartItems),
                 transactionId: proofData.transactionId,
