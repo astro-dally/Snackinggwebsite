@@ -23,14 +23,17 @@ const auth = getAuth(app);
 
 // Google Sign-In function
 export const googleSignIn = async () => {
+    console.log("inside the google login function");
     const provider = new GoogleAuthProvider();
     try {
         const result = await signInWithPopup(auth, provider);
+        console.log("searching for user");
         // The signed-in user info.
         const user = result.user;
         console.log('User info:', user);
         alert('Google Sign-In successful!');
     } catch (error) {
+        console.log("kuch to error hai");
         alert(error.message);
     }
 };
