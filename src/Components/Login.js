@@ -39,9 +39,11 @@ export default function Login({ closeLoginPopup }) {
     const handleGoogleSignIn = async () => {
         try {
             await googleSignIn();
+            console.log("Google function is exceuted");
             alert('Google Sign-In successful!');
             login(); // Update authentication state
             closeLoginPopup();
+            console.log("ready to navigate");
             navigate('/snacks');
         } catch (error) {
             alert(error.message);
