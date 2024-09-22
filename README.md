@@ -1,9 +1,4 @@
-
-# <img src="https://github.com/user-attachments/assets/ba4aeb8d-73be-4670-8385-1217537a17a1" alt="LOGO!" width="150">
-
-
-
-Welcome to **Snacky Nerds** – the ultimate snacking platform tailored for tech enthusiasts and college students! Whether you're pulling an all-nighter, or just craving a midnight snack, Snacky Nerds has you covered with a unique snacking experience designed specifically for you.
+Welcome to **Snackkingwebsites** – the ultimate snacking platform tailored for tech enthusiasts and college students! Whether you're pulling an all-nighter, or just craving a midnight snack, Snacky Nerds has you covered with a unique snacking experience designed specifically for you.
 
 ## 🛠 Project Overview
 
@@ -83,7 +78,6 @@ Have questions, feedback, or just want to chat about snacks? Reach out to us at:
 
 - **Website**: [Snacky Nerds](https://snackynerds.vercel.app/)
 - **GitHub**: [astro-dally](https://github.com/astro-dally)
-- **Email**: [snackyynerds@gmail.com](snackyynerds@gmail.com)
 
 ---
 
