@@ -4,7 +4,7 @@ Welcome to **Snackkingwebsite🥫🍕🍟** – the ultimate snacking platform t
 
 ## 🛠 Project Overview
 
-Snacky Nerds is a one-stop platform for ordering your favorite snacks, especially during those late-night coding sessions or study marathons. Our platform is tailored to deliver snacks during specific time slots, ensuring that you get your snacks even when the campus is closed.
+Snackkingwebsite is a one-stop platform for ordering your favorite snacks, especially during those late-night coding sessions or study marathons. Our platform is tailored to deliver snacks during specific time slots, ensuring that you get your snacks even when the campus is closed.
 
 ## 🚀 Features
 
@@ -16,7 +16,7 @@ Snacky Nerds is a one-stop platform for ordering your favorite snacks, especiall
 
 ## 🖥️ Tech Stack
 
-Snacky Nerds is built with the following technologies:
+Snackkingwebsite is built with the following technologies:
 
 - **Frontend**: 
   - HTML
@@ -83,6 +83,6 @@ Have questions, feedback, or just want to chat about snacks? Reach out to us at:
 
 ---
 
-Dive into Snacky Nerds and let's snack smartly! 🚀
+Dive into Snackkingwebsite and let's snack smartly! 🚀
 
 ---
