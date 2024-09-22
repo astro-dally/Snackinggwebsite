@@ -1,4 +1,4 @@
-Welcome to **Snackkingwebsites** – the ultimate snacking platform tailored for tech enthusiasts and college students! Whether you're pulling an all-nighter, or just craving a midnight snack, Snacky Nerds has you covered with a unique snacking experience designed specifically for you.
+Welcome to **Snackkingwebsite🥫🍕🍟** – the ultimate snacking platform tailored for tech enthusiasts and college students! Whether you're pulling an all-nighter, or just craving a midnight snack, Snacky Nerds has you covered with a unique snacking experience designed specifically for you.
 
 ## 🛠 Project Overview
 
